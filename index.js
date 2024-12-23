@@ -1,17 +1,17 @@
 const mynumber = document.getElementById("mynumber");
-const celTofaren = document.getElementById("celTofaren");
-const farTocel = document.getElementById("farTocel");
-const mysubmir = document.getElementById("mysubmit");
+const celToFaren = document.getElementById("celToFaren");
+const farToCel = document.getElementById("farToCel");
+const button = document.getElementById("button");
 const result = document.getElementById("result");
 const mycancel =document.getElementById("mycancel");
 
 let tmp ;
-mysubmit.onclick = function (){
-    if (celTofaren.checked){
+button.onclick = function (){
+    if (celToFaren.checked){
         tmp=Number(mynumber.value);
         result.textContent = tmp * 9/5 +32 +"°F";
          }
-         else if(farTocel.checked){
+         else if(farToCel.checked){
             tmp=Number(mynumber.value);
             result.textContent = tmp/9 * 5 -32 + "°C";
          }
@@ -24,8 +24,8 @@ mysubmit.onclick = function (){
 mycancel.onclick = function(){
     result.textContent = 0;
     mynumber.value= "";
-    celTofaren.checked =false;
-    farTocel.checked =false;
+    celToFaren.checked =false;
+    farToCel.checked =false;
     console.log(result.textContent);
 
 }
