@@ -15,6 +15,7 @@ button.onclick = function (){
             tmp=Number(mynumber.value);
             result.textContent = tmp/9 * 5 -32 + "°C";
          }
+
          else {
             result.textContent = "please select one!";
          }

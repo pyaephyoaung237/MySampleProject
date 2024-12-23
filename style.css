@@ -1,6 +1,8 @@
 body {
     display: flex;
     justify-content: center;
+    background: url(ice_mountain.avif) no-repeat center center fixed;
+    background-size: cover;
     align-items: center;
     height: 100vh; 
     margin: 0;
@@ -17,7 +19,7 @@ input[type="text"] {
     font-size: 16px;
 }
 #mynumber{
-    width:200px;
+    height:30px;
 }
 
 label {
@@ -34,7 +36,7 @@ div{
     width: 300px;
     height: auto;
     margin: 50px auto;
-    background-color: rgb(225, 227, 230);
+    background-color: rgb(225, 225, 225,0.8);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
@@ -52,10 +54,12 @@ button {
 
 button:hover {
     background-color: rgb(3, 24, 44);
+    font-weight: bold;
 }
 
 #mycancel {
     background-color: rgb(228, 26, 26);
+
 }
 
 #mycancel:hover {
